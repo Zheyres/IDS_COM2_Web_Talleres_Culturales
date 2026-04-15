@@ -1,0 +1,39 @@
+/*base frame of the page*/
+<!DOCTYPE html>
+<html lang="es"></html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Talleres Culturales</title>
+    <link rel="stylesheet" href="sidebar.css">
+    <script src="searchbox.js" defer></script>
+    <script src="fakedatabase.js" defer></script>
+    <script src="showresults.js" defer></script>
+    <img src="banner.png" alt="Banner de Talleres Culturales" class="logo">
+</head>
+<body>
+    
+    
+    /*Barra buscadora y de filtros*/
+    <div class="app">
+  <aside class="sidebar">
+    <h2>Buscar Talleres Culturales</h2>
+
+    <input type="text" id="buscador" placeholder="Buscar...">
+
+    <select id="filtroCategoria">
+      <option value="">Todas</option>
+      <option value="musica">Música</option>
+      <option value="pintura">Pintura</option>
+      <option value="manualidades">Manualidades</option>
+    </select>
+
+    <div id="resultados"></div>
+  </aside>
+
+  <main class="contenido">
+    <div id="mapa"></div>
+    <div id="detalle"></div>
+  </main>
+
+</div>
