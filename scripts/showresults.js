@@ -1,4 +1,3 @@
-
 function mostrarTalleres(lista) {
   const contenedor = document.getElementById("resultados");
   contenedor.innerHTML = "";
@@ -16,6 +15,6 @@ function mostrarTalleres(lista) {
 document.addEventListener("DOMContentLoaded", () => {
   document.getElementById("buscador").addEventListener("input", filtrarTalleres);
   document.getElementById("filtroCategoria").addEventListener("change", filtrarTalleres);
-    filtrarTalleres();
-  /*mostrarTalleres(talleres);*/
+
+  filtrarTalleres();
 });
