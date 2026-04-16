@@ -16,6 +16,6 @@ function mostrarTalleres(lista) {
 document.addEventListener("DOMContentLoaded", () => {
   document.getElementById("buscador").addEventListener("input", filtrarTalleres);
   document.getElementById("filtroCategoria").addEventListener("change", filtrarTalleres);
-
-  mostrarTalleres(talleres);
+    filtrarTalleres();
+  /*mostrarTalleres(talleres);*/
 });

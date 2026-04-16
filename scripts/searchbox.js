@@ -11,8 +11,8 @@ function filtrarTalleres() {
     const coincideCategoria =
       categoria === "" || taller.categoria === categoria;
     
-      const estaActivo = taller.status === "active";
-    
+      
+    const estaActivo = taller.status === "active";
       return coincideTexto && coincideCategoria && estaActivo;
   });
 
@@ -36,5 +36,5 @@ document.addEventListener("DOMContentLoaded", () => {
   document.getElementById("buscador").addEventListener("input", filtrarTalleres);
   document.getElementById("filtroCategoria").addEventListener("change", filtrarTalleres);
 
-  mostrarTalleres(talleres);
+  filtrarTalleres(); // 👈 en vez de mostrarTalleres(talleres)
 });
