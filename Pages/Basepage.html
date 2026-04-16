@@ -1,23 +1,17 @@
-/*base frame of the page*/
 <!DOCTYPE html>
-<html lang="es"></html>
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Talleres Culturales</title>
-    <link rel="stylesheet" href="sidebar.css">
-    <script src="searchbox.js" defer></script>
-    <script src="fakedatabase.js" defer></script>
-    <script src="showresults.js" defer></script>
-    <img src="banner.png" alt="Banner de Talleres Culturales" class="logo">
+  <meta charset="UTF-8">
+  <title>Talleres</title>
+
+  <link rel="stylesheet" href="../CSS/styles.css">
 </head>
 <body>
-    
-    
-    /*Barra buscadora y de filtros*/
-    <div class="app">
+
+<div class="app">
+
   <aside class="sidebar">
-    <h2>Buscar Talleres Culturales</h2>
+    <h2>Talleres</h2>
 
     <input type="text" id="buscador" placeholder="Buscar...">
 
@@ -37,3 +31,10 @@
   </main>
 
 </div>
+
+<script src="../scripts/fakedatabase.js"></script>
+<script src="../scripts/showresults.js"></script>
+<script src="../scripts/searchbox.js"></script>
+
+</body>
+</html>
