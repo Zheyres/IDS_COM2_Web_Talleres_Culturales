@@ -6,7 +6,8 @@ const talleres = [
     categoria: "musica",
     lat: -34.60,
     lng: -58.38,
-    direccion: "Av. Siempre Viva 123"
+    direccion: "Av. Siempre Viva 123",
+    status: "active"
   },
   {
     id: 2,
@@ -14,7 +15,18 @@ const talleres = [
     descripcion: "Aprende técnicas básicas de pintura",
     categoria: "pintura",
     lat: -78.0,
-    lng: -9038,
-    direccion: "Av. montenergo 254"
-  }
+    lng: -90.38,
+    direccion: "Av. Montenergo 254",
+    status : "active"
+  },
+    {
+        id: 3,
+        nombre: "manualidades Ester",
+        descripcion: "Aprende técnicas de manualidades",
+        categoria: "manualidades",
+        lat: -35.0,
+        lng: -40.38,
+        direccion: "Av. Cabildo 254",
+        status : "pending"
+    }
 ];

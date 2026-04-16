@@ -10,8 +10,10 @@ function filtrarTalleres() {
 
     const coincideCategoria =
       categoria === "" || taller.categoria === categoria;
-
-    return coincideTexto && coincideCategoria;
+    
+      const estaActivo = taller.status === "active";
+    
+      return coincideTexto && coincideCategoria && estaActivo;
   });
 
   mostrarTalleres(resultado);
@@ -30,6 +32,9 @@ function mostrarTalleres(lista) {
     contenedor.appendChild(div);
   });
 }
-document.getElementById("buscador").addEventListener("input", filtrarTalleres);
-document.getElementById("filtroCategoria").addEventListener("change", filtrarTalleres);
-mostrarTalleres(talleres);
+document.addEventListener("DOMContentLoaded", () => {
+  document.getElementById("buscador").addEventListener("input", filtrarTalleres);
+  document.getElementById("filtroCategoria").addEventListener("change", filtrarTalleres);
+
+  mostrarTalleres(talleres);
+});
