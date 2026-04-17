@@ -2,8 +2,16 @@ body {
   margin: 0;
   font-family: Arial, sans-serif;
   background-color: #a3a3af;
+  background-image: url(../assets/background.jpg);
+  background-size: cover;
 }
-
+.inpagetitle {
+  text-align: center;
+  color: rgb(0, 0, 0);
+  background-color: #6a71c4;
+  padding: 20px;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
 .app {
   display: flex;
   height: 100vh;

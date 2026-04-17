@@ -1,3 +1,4 @@
+//para que cargue el DOM antes de ejecutar el código, sino se rompia//
 document.addEventListener("DOMContentLoaded", () => {
 
   //  BOTÓN REGISTRAR 
