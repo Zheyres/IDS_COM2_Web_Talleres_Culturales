@@ -1,4 +1,4 @@
-//para que cargue el DOM antes de ejecutar el código, sino se rompia//
+//Para que cargue el DOM antes de ejecutar el código, sino se rompia//
 document.addEventListener("DOMContentLoaded", () => {
 
   //  BOTÓN REGISTRAR 
@@ -56,5 +56,21 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   }
+  document.getElementById("formTaller").addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  const imagenInput = document.getElementById("imagenInput");
+
+  // Si no hay imagen
+  if (!imagenInput.files.length) {
+    alert("Por favor, cargue una imagen del taller");
+    return;
+  }
+
+  // Simulación de guardado
+  alert("Su información ha sido registrada con éxito.\nRecibirá un email de confirmación.");
+  //REDIRECT TO MAIN PAGE
+  window.location.href = "../Pages/Basepage.html";
+});
 
 });
