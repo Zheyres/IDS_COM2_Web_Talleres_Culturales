@@ -1,6 +1,7 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
+  background-color: #a3a3af;
 }
 
 .app {
@@ -87,6 +88,21 @@ form {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  width: 300px;
-  margin: 20px auto;
+  width: 400px;
+  height: 500px;
+  margin: 30px auto;
+  background: #6a71c4;
+  color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  border-radius: 8px;
+}
+
+#previewContainer {
+  margin-top: 10px;
+}
+
+#previewImagen {
+  border-radius: 6px;
+  margin-top: 5px;
 }

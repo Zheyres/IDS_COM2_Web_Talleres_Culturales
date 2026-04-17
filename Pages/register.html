@@ -4,28 +4,53 @@
   <meta charset="UTF-8">
   <title>Registrar Taller</title>
   <link rel="stylesheet" href="../CSS/styles.css">
+  <script src="../scripts/register.js" defer></script>
 </head>
 <body>
 
 <h1>Registrar Taller Cultural</h1>
 
 <form id="formTaller">
+
   <input type="text" placeholder="Nombre del Taller" required>
   <input type="text" placeholder="Descripción" required>
-  <input type="text" placeholder="Direccion" required>
+
+  <input type="text" id="direccion" placeholder="Dirección" required>
+
+  <label>
+    <input type="checkbox" id="mismaDireccion">
+    Usar dirección de sede principal
+  </label>
+
   <input type="email" placeholder="E-mail" required>
   <input type="text" placeholder="Horarios" required>
   <input type="text" placeholder="Nombre Titular" required>
+
   <select>
     <option value="musica">Música</option>
     <option value="pintura">Pintura</option>
     <option value="manualidades">Manualidades</option>
   </select>
 
-  <button type="submit">Submit</button>
-  <button onclick="window.location.href='Basepage.html'">
-  ← Volver
-</button>
+  <!-- IMAGEN -->
+  <input type="file" id="imagenInput" accept="image/*" hidden required>
+
+  <button type="button" id="btnImagen">
+    Cargar Imagen
+  </button>
+
+  <div id="previewContainer">
+    <p id="nombreArchivo"></p>
+    <img id="previewImagen" style="max-width: 200px; display: none;">
+  </div>
+
+  <!-- BOTONES -->
+  <button type="submit">Guardar</button>
+
+  <button type="button" onclick="window.location.href='Basepage.html'">
+    ← Volver
+  </button>
+
 </form>
 
 </body>
