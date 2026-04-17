@@ -14,8 +14,8 @@ const talleres = [
     nombre: "Pintura para principiantes",
     descripcion: "Aprende técnicas básicas de pintura",
     categoria: "pintura",
-    lat: -78.0,
-    lng: -90.38,
+    lat: -34.55, 
+    lng: -58.70,
     direccion: "Av. Montenergo 254",
     status : "active"
   },

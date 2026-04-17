@@ -17,4 +17,5 @@ function filtrarTalleres() {
   });
 
   mostrarTalleres(resultado);
+  cargarMarcadores(resultado)
 }
