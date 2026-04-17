@@ -6,6 +6,7 @@ body {
 .app {
   display: flex;
   height: 100vh;
+  position: relative;
 }
 
 /* SIDEBAR */
@@ -41,7 +42,7 @@ body {
 }
 
 #resultados div:hover {
-  background: #3a3a5a;
+  background: #ae680b;
 }
 
 /* CONTENIDO */
@@ -60,4 +61,32 @@ body {
   height: 40%;
   padding: 15px;
   background: #f5f5f5;
+}
+
+#btnRegistrar {
+  width: 15%;
+  padding: 10px;
+  margin-bottom: 15px;
+  position:absolute;
+  top: 1%;
+  left: 85%;
+  background: #5a5aff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+#btnRegistrar:hover {
+  background: #ac5c15;
+}
+/*register page*/
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 300px;
+  margin: 20px auto;
 }
