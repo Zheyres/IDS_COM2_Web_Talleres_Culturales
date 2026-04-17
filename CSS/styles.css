@@ -114,3 +114,7 @@ form {
   border-radius: 6px;
   margin-top: 5px;
 }
+
+#resultados div.activo {
+  background: #00c3ff;
+}

@@ -19,14 +19,14 @@ const talleres = [
     direccion: "Av. Montenergo 254",
     status : "active"
   },
-    {
-        id: 3,
-        nombre: "manualidades Ester",
-        descripcion: "Aprende técnicas de manualidades",
-        categoria: "manualidades",
-        lat: -35.0,
-        lng: -40.38,
-        direccion: "Av. Cabildo 254",
-        status : "pending"
-    }
+  {
+    id: 3,
+    nombre: "manualidades Ester",
+    descripcion: "Aprende técnicas de manualidades",
+    categoria: "manualidades",
+    lat: -35.0,
+    lng: -40.38,
+    direccion: "Av. Cabildo 254",
+    status : "pending"
+  }
 ];

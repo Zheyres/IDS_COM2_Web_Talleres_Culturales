@@ -52,9 +52,9 @@ function mostrarDetalle(taller){
 
     detalle.innerHTML = `
     <h2>${taller.nombre}</h2> 
-    <p><Bold>Descripción:</Bold> ${taller.descripcion}</p>
-    <p><Bold>Categoria:</Bold> ${taller.categoria}</p>
-    <p><Bold>Dirección:</Bold> ${taller.direccion}</p> `;
+    <p><strong>Descripción:</strong> ${taller.descripcion}</p>
+    <p><strong>Categoria:</strong> ${taller.categoria}</p>
+    <p><strong>Dirección:</strong> ${taller.direccion}</p> `;
 }
 
 function resaltarEnLista(id) {
