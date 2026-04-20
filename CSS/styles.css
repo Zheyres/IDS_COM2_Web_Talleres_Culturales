@@ -4,6 +4,10 @@ body {
   background-color: #a3a3af;
   background-image: url(../assets/background.jpg);
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  
 }
 .inpagetitle {
   text-align: center;
@@ -62,12 +66,12 @@ body {
 }
 
 #mapa {
-  height: 60%;
+  height: 60vh;
   background: #ddd;
 }
 
 #detalle {
-  height: 40%;
+  height: 40vh;
   padding: 15px;
   background: #ecbfa3;
 }
