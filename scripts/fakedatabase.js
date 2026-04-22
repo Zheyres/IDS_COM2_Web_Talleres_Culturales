@@ -7,7 +7,8 @@ const talleres = [
     lat: -34.60,
     lng: -58.38,
     direccion: "Av. Siempre Viva 123",
-    status: "active"
+    status: "active",
+    horarios: "Lunes 8 a 10"
   },
   {
     id: 2,
@@ -17,7 +18,8 @@ const talleres = [
     lat: -34.55, 
     lng: -58.70,
     direccion: "Av. Montenergo 254",
-    status : "active"
+    status : "active",
+    horarios: "Lunes 8 a 10"
   },
   {
     id: 3,
@@ -37,7 +39,8 @@ const talleres = [
   lat: -34.61,
   lng: -58.38,
   direccion: "Av. Corrientes 1234",
-  status: "approved"
+  status: "active",
+  horarios: "Lunes 8 a 10"
 },
 {
   id: 5,
@@ -57,7 +60,8 @@ const talleres = [
   lat: -34.60,
   lng: -58.41,
   direccion: "Av. Santa Fe 2222",
-  status: "active"
+  status: "active",
+  horarios: "Lunes 8 a 10"
 },
 {
   id: 7,
@@ -77,7 +81,8 @@ const talleres = [
   lat: -34.55,
   lng: -58.47,
   direccion: "Av. Libertador 3000",
-  status: "active"
+  status: "active",
+  horarios: "Lunes 8 a 10"
 },
 {
   id: 9,
@@ -97,7 +102,8 @@ const talleres = [
   lat: -34.62,
   lng: -58.40,
   direccion: "Av. Rivadavia 4567",
-  status: "active"
+  status: "active",
+  horarios: "Lunes 8 a 10"
 },
 {
   id: 11,
