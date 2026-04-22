@@ -54,7 +54,8 @@ function mostrarDetalle(taller){
     <h2>${taller.nombre}</h2> 
     <p><strong>Descripción:</strong> ${taller.descripcion}</p>
     <p><strong>Categoria:</strong> ${taller.categoria}</p>
-    <p><strong>Dirección:</strong> ${taller.direccion}</p> `;
+    <p><strong>Dirección:</strong> ${taller.direccion}</p>
+    <p><strong>Horarios:</strong> ${taller.horarios}</p> `;
 }
 
 function resaltarEnLista(id) {
