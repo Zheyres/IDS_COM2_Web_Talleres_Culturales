@@ -1,9 +1,13 @@
 document.addEventListener("DOMContentLoaded", () => {
+  // === 1. CAPTURA DEL FORMULARIO (Faltaba esto) ===
+  const form = document.getElementById("formTaller");
+
   // Inputs del Formulario
   const inputNombre = document.getElementById("nombre");
   const inputTitular = document.getElementById("titular");
   const inputDescripcion = document.getElementById("descripcion");
   const inputDireccion = document.getElementById("direccion");
+  const SedePrincipal = "Sede Central del Centro Cultural (Av. Siempre Viva 123)";
   const chkMismaDireccion = document.getElementById("mismaDireccion");
   const inputTelefono = document.getElementById("telefono");
   const inputWebsite = document.getElementById("website");
@@ -40,7 +44,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Manejo de Dirección y Sede Central
     if (chkMismaDireccion.checked) {
-      prevDireccion.innerHTML = "Sede Central del Centro Cultural (Av. Siempre Viva 123)";
+      prevDireccion.innerHTML = SedePrincipal;
     } else {
       prevDireccion.innerText = inputDireccion.value || "-";
     }
@@ -103,6 +107,26 @@ document.addEventListener("DOMContentLoaded", () => {
       prevImgPlaceholder.style.display = "block";
     }
   });
+//alerts y redireccion al enviar el formulario//
+  if (form) {
+    form.addEventListener("submit", (e) => {
+      // Frenamos el envío automático
+      e.preventDefault(); 
+
+      // Validación de la Imagen Obligatoria
+      if (!imagenInput.files || imagenInput.files.length === 0) {
+        alert("❌ Error: Falta la imagen. Por favor, cargue un logotipo o foto principal para el taller.");
+        return; 
+      }
+
+      // Si tiene imagen, mostramos cartel de éxito
+      const nombreTaller = inputNombre.value;
+      alert(`¡Registro Exitoso! 🎉\n\nEl taller "${nombreTaller}" ha sido registrado correctamente y quedó en estado pendiente de aprobación por el moderador.`);
+
+      // Redireccionamos a la pantalla del mapa
+      window.location.href = "Basepage.html";
+    });
+  }
 
   // Ejecución inicial por defecto
   actualizarPreview();

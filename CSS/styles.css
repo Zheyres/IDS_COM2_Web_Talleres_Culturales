@@ -114,6 +114,22 @@ form {
   border-radius: 8px;
 }
 
+  #btnImagen{
+  background: #444;
+  color: white;
+  padding: 8px;
+  border: none;
+  cursor: pointer; 
+  border-radius: 4px;
+
+}
+#nombreArchivo{
+  margin: 0; 
+  font-size: 0.85rem;
+  color: #666;
+  background-color: #f8f4f4;
+}
+
 #previewContainer {
   margin-top: 10px;
 }

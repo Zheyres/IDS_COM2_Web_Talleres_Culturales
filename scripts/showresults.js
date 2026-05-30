@@ -30,7 +30,7 @@ function mostrarTalleres(lista) {
     contenedor.appendChild(div);
   });
 }
-document.addEventListener("DOMContentLoaded", () => {
+  document.addEventListener("DOMContentLoaded", () => {
   document.getElementById("buscador").addEventListener("input", filtrarTalleres);
   document.getElementById("filtroCategoria").addEventListener("change", filtrarTalleres);
 
