@@ -8,40 +8,38 @@
   
   <link rel="stylesheet" href="../CSS/styles.css"/>
 
-
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="../scripts/fakedatabase.js"defer></script>
+  <script src="../scripts/map.js" defer></script>
+  <script src="../scripts/showresults.js"defer></script>
+  <script src="../scripts/searchbox.js"defer></script>
+  <script src="../scripts/register.js"defer></script>
 </head>
 <body>
 
-<div class="app">
+  <div class="app">
 
-  <aside class="sidebar">
-    <h2>Talleres Culturales</h2>
+    <aside class="sidebar">
+      <h2>Talleres Culturales</h2>
 
-    <input type="text" id="buscador" placeholder="Buscar...">
+      <input type="text" id="buscador" placeholder="Buscar...">
 
-    <select id="filtroCategoria">
-      <option value="">Todas</option>
-      <option value="musica">Música</option>
-      <option value="pintura">Pintura</option>
-      <option value="manualidades">Manualidades</option>
-    </select>
+      <select id="filtroCategoria">
+        <option value="">Todas</option>
+        <option value="musica">Música</option>
+        <option value="pintura">Pintura</option>
+        <option value="manualidades">Manualidades</option>
+      </select>
 
-    <div id="resultados"></div>
-  </aside>
+      <div id="resultados"></div>
+    </aside>
 
-  <main class="contenido">
-    <div id="mapa"></div>
-    <div id="detalle"></div>
-    <button id="btnRegistrar">Registrar Taller</button>
-  </main>
-  
-</div>
-<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-<script src="../scripts/fakedatabase.js"defer></script>
-<script src="../scripts/map.js" defer></script>
-<script src="../scripts/showresults.js"defer></script>
-<script src="../scripts/searchbox.js"defer></script>
-<script src="../scripts/register.js"defer></script>
-
+    <main class="contenido">
+      <div id="mapa"></div>
+      <div id="detalle"></div>
+      <button id="btnRegistrar">Registrar Taller</button>
+    </main>
+    
+  </div>
 </body>
 </html>

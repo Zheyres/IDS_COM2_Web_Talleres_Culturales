@@ -1,12 +1,14 @@
 const talleres = [
   {
     id: 1,
-    nombre: "Guitarra para principiantes",
+    nombre: "Cede Centro Cultural",
     descripcion: "Aprende acordes básicos",
-    categoria: "musica",
+    categoria: "Todas",
     lat: -34.60,
     lng: -58.38,
     direccion: "Av. Siempre Viva 123",
+    telefono: "123-444-xxxx",
+    website: "https://www.cede.com.ar",
     status: "active",
     horarios: "Lunes 8 a 10"
   },
@@ -18,6 +20,8 @@ const talleres = [
     lat: -34.55, 
     lng: -58.70,
     direccion: "Av. Montenergo 254",
+    telefono: "123-444-xxxx",
+    website: "https://www.pinturaparaprincipiantes.com.ar",
     status : "active",
     horarios: "Lunes 8 a 10"
   },
@@ -29,6 +33,8 @@ const talleres = [
     lat: -35.0,
     lng: -40.38,
     direccion: "Av. Cabildo 254",
+    telefono: "123-444-xxxx",
+    website: "https://www.manualidadesester.com.ar",
     status : "pending"
   },
   {
@@ -39,6 +45,8 @@ const talleres = [
   lat: -34.61,
   lng: -58.38,
   direccion: "Av. Corrientes 1234",
+  telefono: "123-444-xxxx",
+  website: "https://www.tallercreativsur.com.ar",
   status: "active",
   horarios: "Lunes 8 a 10"
 },
@@ -50,6 +58,8 @@ const talleres = [
   lat: -34.58,
   lng: -58.44,
   direccion: "Calle Honduras 5678",
+  telefono: "123-444-xxxx",
+  website: "https://www.yogavidaPlena.com.ar",
   status: "pending"
 },
 {
@@ -60,6 +70,8 @@ const talleres = [
   lat: -34.60,
   lng: -58.41,
   direccion: "Av. Santa Fe 2222",
+  telefono: "123-444-xxxx",
+  website: "https://www.codelabjuniors.com.ar",
   status: "active",
   horarios: "Lunes 8 a 10"
 },
@@ -71,6 +83,8 @@ const talleres = [
   lat: -34.63,
   lng: -58.39,
   direccion: "Av. Belgrano 987",
+  telefono: "123-444-xxxx",
+  website: "https://www.cocinacaseraana.com.ar",
   status: "rejected"
 },
 {
@@ -81,6 +95,8 @@ const talleres = [
   lat: -34.55,
   lng: -58.47,
   direccion: "Av. Libertador 3000",
+  telefono: "123-444-xxxx",
+  website: "https://www.clubdelecturanorte.com.ar",
   status: "active",
   horarios: "Lunes 8 a 10"
 },
@@ -92,6 +108,8 @@ const talleres = [
   lat: -34.59,
   lng: -58.42,
   direccion: "Calle Thames 1450",
+  telefono: "123-444-xxxx",
+  website: "https://www.fitnessexpress.com.ar",
   status: "pending"
 },
 {
@@ -102,6 +120,8 @@ const talleres = [
   lat: -34.62,
   lng: -58.40,
   direccion: "Av. Rivadavia 4567",
+  telefono: "123-444-xxxx",
+  website: "https://www.musicaparatodos.com.ar",
   status: "active",
   horarios: "Lunes 8 a 10"
 },
@@ -113,6 +133,8 @@ const talleres = [
   lat: -34.64,
   lng: -58.37,
   direccion: "Calle Defensa 1200",
+  telefono: "123-444-xxxx",
+  website: "https://www.huertaurbana.com.ar",
   status: "pending"
 }
 ];

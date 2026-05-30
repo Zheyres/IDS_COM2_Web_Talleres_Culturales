@@ -9,7 +9,7 @@ function filtrarTalleres() {
       taller.descripcion.toLowerCase().includes(texto);
 
     const coincideCategoria =
-      categoria === "" || taller.categoria === categoria;
+      categoria === "" || taller.categoria === categoria || taller.categoria === "Todas";
     
       
     const estaActivo = taller.status === "active";
