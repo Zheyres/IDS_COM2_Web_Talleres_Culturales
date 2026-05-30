@@ -10,48 +10,66 @@
 
 <h1 class="inpagetitle">Registrar Taller Cultural</h1>
 
-<form id="formTaller">
+<div class="registro-layout" style="display: flex; gap: 40px; max-width: 1100px; margin: 0 auto; padding: 20px;">
+  
+  <form id="formTaller" style="flex: 1; display: flex; flex-direction: column; gap: 12px;">
+    <input type="text" id="nombre" placeholder="Nombre del Taller" required>
+    <input type="text" id="titular" placeholder="Nombre Titular" required>
+    <input type="text" id="descripcion" placeholder="Descripción" required>
+    
+    <input type="text" id="direccion" placeholder="Dirección" required>
+    <label>
+      <input type="checkbox" id="mismaDireccion">
+      Usar dirección de sede principal
+    </label>
 
-  <input type="text" placeholder="Nombre del Taller" required>
-  <input type="text" placeholder="Descripción" required>
+    <input type="text" id="telefono" placeholder="Teléfono de Contacto" required>
+    <input type="url" id="website" placeholder="Website (Ej: https://misitio.com)">
+    <input type="email" id="email" placeholder="E-mail" required>
+    <input type="text" id="horarios" placeholder="Horarios" required>
 
-  <input type="text" id="direccion" placeholder="Dirección" required>
+    <select id="categoria">
+      <option value="musica">Música</option>
+      <option value="pintura">Pintura</option>
+      <option value="manualidades">Manualidades</option>
+    </select>
 
-  <label>
-    <input type="checkbox" id="mismaDireccion">
-    Usar dirección de sede principal
-  </label>
+    <input type="file" id="imagenInput" accept="image/*" hidden>
+    <button type="button" id="btnImagen" style="background: #444; color: white; padding: 8px; border: none; cursor: pointer; border-radius: 4px;">
+      Cargar Imagen / Logo
+    </button>
+    <p id="nombreArchivo" style="margin: 0; font-size: 0.85rem; color: #666;"></p>
 
-  <input type="email" placeholder="E-mail" required>
-  <input type="text" placeholder="Horarios" required>
-  <input type="text" placeholder="Nombre Titular" required>
+    <button type="submit" style="background: #5a5aff; color: white; padding: 10px; border: none; border-radius: 4px; font-weight: bold; cursor: pointer;">Registrar</button>
+    <button type="button" onclick="window.location.href='Basepage.html'" style="background: #666; color: white; padding: 10px; border: none; border-radius: 4px; cursor: pointer;">← Volver</button>
+  </form>
 
-  <select>
-    <option value="musica">Música</option>
-    <option value="pintura">Pintura</option>
-    <option value="manualidades">Manualidades</option>
-  </select>
+  <div class="preview-card-container" style="flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: flex-start; background: #f9f9f9; padding: 20px; border-radius: 8px; border: 1px solid #ddd;">
+    <h3 style="margin-top: 0; color: #333;">Vista previa en tiempo real:</h3>
+    
+    <div id="cardPreview" class="detalle-box" style="background: #ecbfa3; color: #000; padding: 20px; border-radius: 8px; width: 100%; box-shadow: 0 4px 10px rgba(0,0,0,0.15); box-sizing: border-box;">
+      
+      <div style="text-align: center; margin-bottom: 15px;">
+        <img id="prevImg" src="" alt="[Foto / Logotipo]" style="max-height: 120px; max-width: 100%; object-fit: contain; background: rgba(255,255,255,0.5); border-radius: 4px; padding: 5px; display: none;">
+        <div id="prevImgPlaceholder" style="background: rgba(0,0,0,0.05); border: 2px dashed #888; padding: 20px; border-radius: 4px; font-style: italic; color: #555;">
+          [Foto / Logotipo del Taller]
+        </div>
+      </div>
 
-  <!-- IMAGEN -->
-  <input type="file" id="imagenInput" accept="image/*" hidden>
-
-  <button type="button" id="btnImagen">
-    Cargar Imagen
-  </button>
-
-  <div id="previewContainer">
-    <p id="nombreArchivo"></p>
-    <img id="previewImagen" style="max-width: 200px; display: none;">
+      <h2 id="prevNombre" style="margin: 0 0 10px 0; font-size: 1.8rem;">Nombre del Taller</h2>
+      <p><strong>Titular:</strong> <span id="prevTitular">-</span></p> 
+      <p><strong>Descripción:</strong> <span id="prevDescripcion">-</span></p>
+      <p><strong>Categoria:</strong> <span id="prevCategoria">musica</span></p>
+      <p id="wrapperDireccion"><strong>Dirección:</strong> <span id="prevDireccion">-</span></p>
+      <p><strong>Teléfono:</strong> <span id="prevTelefono">-</span></p>
+      <p><strong>Website:</strong> <a id="prevWebsite" href="#" target="_blank">-</a></p>
+      <p><strong>Email:</strong> <a id="prevEmail" href="#">-</a></p>
+      <p><strong>Horarios:</strong> <span id="prevHorarios">-</span></p> 
+    </div>
   </div>
 
-  <!-- BOTONES -->
-  <button type="submit">Registrar</button>
+</div>
 
-  <button type="button" onclick="window.location.href='Basepage.html'">
-    ← Volver
-  </button>
-
-</form>
-  <script src="../scripts/register.js" defer></script>
+<script src="../scripts/register.js" defer></script>
 </body>
 </html>

@@ -51,10 +51,14 @@ function mostrarDetalle(taller){
     const detalle = document.getElementById("detalle");
 
     detalle.innerHTML = `
-    <h2>${taller.nombre}</h2> 
+    <h2>${taller.nombre}</h2>
+    <p><strong>Titular:</strong> ${taller.nombreTitular}</p> 
     <p><strong>Descripción:</strong> ${taller.descripcion}</p>
     <p><strong>Categoria:</strong> ${taller.categoria}</p>
     <p><strong>Dirección:</strong> ${taller.direccion}</p>
+    <p><strong>Teléfono:</strong> ${taller.telefono}</p>
+    <p><strong>Website:</strong> <a href="${taller.website}" target="_blank">${taller.website}</a></p>
+    <p><strong>Email:</strong> <a href="mailto:${taller.Email}">${taller.Email}</a></p>
     <p><strong>Horarios:</strong> ${taller.horarios}</p> `;
 }
 

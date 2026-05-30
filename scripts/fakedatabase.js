@@ -2,19 +2,22 @@ const talleres = [
   {
     id: 1,
     nombre: "Cede Centro Cultural",
-    descripcion: "Aprende acordes básicos",
+    nombreTitular: "Juan Pérez",
+    descripcion: "Cede del centro cultural ofrece una variedad de talleres artísticos y culturales para todas las edades",
     categoria: "Todas",
     lat: -34.60,
     lng: -58.38,
     direccion: "Av. Siempre Viva 123",
     telefono: "123-444-xxxx",
     website: "https://www.cede.com.ar",
+    Email: "centro@cultural.com.ar",
     status: "active",
-    horarios: "Lunes 8 a 10"
+    horarios: "Sabados y Domingos 8 a 10"
   },
   {
     id: 2,
     nombre: "Pintura para principiantes",
+    nombreTitular: "María Gómez",
     descripcion: "Aprende técnicas básicas de pintura",
     categoria: "pintura",
     lat: -34.55, 
@@ -22,12 +25,14 @@ const talleres = [
     direccion: "Av. Montenergo 254",
     telefono: "123-444-xxxx",
     website: "https://www.pinturaparaprincipiantes.com.ar",
+    Email: "info@pinturaparaprincipiantes.com.ar",
     status : "active",
     horarios: "Lunes 8 a 10"
   },
   {
     id: 3,
     nombre: "manualidades Ester",
+    nombreTitular: "Ester Rodríguez",
     descripcion: "Aprende técnicas de manualidades",
     categoria: "manualidades",
     lat: -35.0,
@@ -35,11 +40,13 @@ const talleres = [
     direccion: "Av. Cabildo 254",
     telefono: "123-444-xxxx",
     website: "https://www.manualidadesester.com.ar",
+    Email: "info@manualidadesester.com.ar",
     status : "pending"
   },
   {
   id: 4,
   nombre: "Taller Creativo Sur",
+  nombreTitular: "Lucía Fernández",
   descripcion: "Clases de pintura y dibujo para principiantes",
   categoria: "arte",
   lat: -34.61,
@@ -47,12 +54,14 @@ const talleres = [
   direccion: "Av. Corrientes 1234",
   telefono: "123-444-xxxx",
   website: "https://www.tallercreativsur.com.ar",
+  Email: "info@tallercreativsur.com.ar",
   status: "active",
   horarios: "Lunes 8 a 10"
 },
 {
   id: 5,
   nombre: "Yoga Vida Plena",
+  nombreTitular: "Sofía Martínez",
   descripcion: "Sesiones de yoga y meditación guiada",
   categoria: "bienestar",
   lat: -34.58,
@@ -60,11 +69,13 @@ const talleres = [
   direccion: "Calle Honduras 5678",
   telefono: "123-444-xxxx",
   website: "https://www.yogavidaPlena.com.ar",
+  Email: "info@yogavidaPlena.com.ar",
   status: "pending"
 },
 {
   id: 6,
   nombre: "CodeLab Juniors",
+  nombreTitular: "Carlos López",
   descripcion: "Introducción a la programación para jóvenes",
   categoria: "tecnologia",
   lat: -34.60,
@@ -72,12 +83,14 @@ const talleres = [
   direccion: "Av. Santa Fe 2222",
   telefono: "123-444-xxxx",
   website: "https://www.codelabjuniors.com.ar",
+  Email: "info@codelabjuniors.com.ar",
   status: "active",
   horarios: "Lunes 8 a 10"
 },
 {
   id: 7,
   nombre: "Cocina Casera con Ana",
+  nombreTitular: "Ana García",
   descripcion: "Aprende recetas tradicionales argentinas",
   categoria: "cocina",
   lat: -34.63,
@@ -85,11 +98,13 @@ const talleres = [
   direccion: "Av. Belgrano 987",
   telefono: "123-444-xxxx",
   website: "https://www.cocinacaseraana.com.ar",
+  Email: "info@cocinacaseraana.com.ar",
   status: "rejected"
 },
 {
   id: 8,
   nombre: "Club de Lectura Norte",
+  nombreTitular: "Federico Ruiz",
   descripcion: "Encuentros semanales para analizar libros",
   categoria: "literatura",
   lat: -34.55,
@@ -97,12 +112,14 @@ const talleres = [
   direccion: "Av. Libertador 3000",
   telefono: "123-444-xxxx",
   website: "https://www.clubdelecturanorte.com.ar",
+  Email: "info@clubdelecturanorte.com.ar",
   status: "active",
   horarios: "Lunes 8 a 10"
 },
 {
   id: 9,
   nombre: "Fitness Express",
+  nombreTitular: "Martín Sánchez",
   descripcion: "Entrenamiento funcional de alta intensidad",
   categoria: "deporte",
   lat: -34.59,
@@ -110,11 +127,13 @@ const talleres = [
   direccion: "Calle Thames 1450",
   telefono: "123-444-xxxx",
   website: "https://www.fitnessexpress.com.ar",
+  Email: "info@fitnessexpress.com.ar",
   status: "pending"
 },
 {
   id: 10,
   nombre: "Música para Todos",
+  nombreTitular: "Laura Díaz",
   descripcion: "Clases de guitarra y piano",
   categoria: "musica",
   lat: -34.62,
@@ -122,12 +141,14 @@ const talleres = [
   direccion: "Av. Rivadavia 4567",
   telefono: "123-444-xxxx",
   website: "https://www.musicaparatodos.com.ar",
+  Email: "info@musicaparatodos.com.ar",
   status: "active",
   horarios: "Lunes 8 a 10"
 },
 {
   id: 11,
   nombre: "Huerta Urbana",
+  nombreTitular: "Santiago Torres",
   descripcion: "Aprende a cultivar tus propios alimentos",
   categoria: "sustentabilidad",
   lat: -34.64,
@@ -135,6 +156,7 @@ const talleres = [
   direccion: "Calle Defensa 1200",
   telefono: "123-444-xxxx",
   website: "https://www.huertaurbana.com.ar",
+  Email: "info@huertaurbana.com.ar",
   status: "pending"
 }
 ];
