@@ -11,9 +11,9 @@ function mostrarTalleres(lista) {
       <h3>${taller.nombre}</h3>
       <p>${taller.descripcion}</p>
       <span>${taller.categoria}</span>
-      <p>${taller.horarios}</p>
       <p>${taller.direccion}</p>
       <p>${taller.telefono}</p>
+      <p>${taller.horarios}</p>
     `;
 
 
