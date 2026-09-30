@@ -10,6 +10,6 @@ CREATE TABLE IF NOT EXISTS talleres (
     telefono TEXT,
     website TEXT,
     email TEXT,                 -- Normalizamos a minúscula para mantener buenas prácticas
-    status TEXT DEFAULT 'active',
+    status TEXT DEFAULT 'pending', -- estado default es pending , otros active , rejected.
     horarios TEXT
 );
