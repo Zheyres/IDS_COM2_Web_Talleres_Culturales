@@ -108,26 +108,63 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 //alerts y redireccion al enviar el formulario//
+  // === ALERTS Y ENVÍO A LA BASE DE DATOS ===
   if (form) {
-    form.addEventListener("submit", (e) => {
-      // Frenamos el envío automático
+    form.addEventListener("submit", async (e) => {
+      // 1. Frenamos el envío automático del formulario HTML
       e.preventDefault(); 
 
-      // Validación de la Imagen Obligatoria
+      // 2. Validación de la Imagen Obligatoria
       if (!imagenInput.files || imagenInput.files.length === 0) {
         alert("❌ Error: Falta la imagen. Por favor, cargue un logotipo o foto principal para el taller.");
         return; 
       }
 
-      // Si tiene imagen, mostramos cartel de éxito
-      const nombreTaller = inputNombre.value;
-      alert(`¡Registro Exitoso! 🎉\n\nEl taller "${nombreTaller}" ha sido registrado correctamente y quedó en estado pendiente de aprobación por el moderador.`);
+      // 3. Armamos el objeto con los datos del nuevo taller
+      const nuevoTaller = {
+        nombre: inputNombre.value.trim(),
+        nombreTitular: inputTitular.value.trim(),
+        descripcion: inputDescripcion.value.trim(),
+        categoria: selectCategoria.value,
+        direccion: chkMismaDireccion.checked ? SedePrincipal : inputDireccion.value.trim(),
+        telefono: inputTelefono.value.trim(),
+        website: inputWebsite.value.trim(),
+        email: inputEmail.value.trim(),
+        horarios: inputHorarios.value.trim(),
+        // Si el formulario no tiene inputs de geolocalización, enviamos valores por defecto o null
+        lat: -34.60, 
+        lng: -58.38
+      };
 
-      // Redireccionamos a la pantalla del mapa
-      window.location.href = "Basepage.html";
+      try {
+        // 4. Petición POST a la API de Node.js
+        const response = await fetch(`${API_BASE_URL}/talleres`, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json"
+          },
+          body: JSON.stringify(nuevoTaller)
+        });
+
+        const resultado = await response.json();
+
+        if (response.ok) {
+          // 5. Cartel de éxito y redirección si la base de datos guardó el taller
+          const nombreTaller = inputNombre.value;
+          alert(`¡Registro Exitoso! 🎉\n\nEl taller "${nombreTaller}" ha sido registrado correctamente y quedó en estado pendiente de aprobación por el moderador.`);
+
+          // Redireccionamos a la pantalla principal
+          window.location.href = "Basepage.html";
+        } else {
+          alert(`❌ Error al guardar en la base de datos: ${resultado.error || 'Ocurrió un problema'}`);
+        }
+
+      } catch (error) {
+        console.error("Error al conectar con el servidor:", error);
+        alert("❌ Error de conexión: Asegurate de que el servidor (node server.js) esté corriendo.");
+      }
     });
   }
-
   // Ejecución inicial por defecto
   actualizarPreview();
 });
