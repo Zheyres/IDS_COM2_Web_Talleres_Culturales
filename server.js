@@ -95,7 +95,8 @@ app.post('/api/talleres', (req, res) => {
       lng ? parseFloat(lng) : null,
       direccion, telefono, website, email, horarios
     );
-
+    console.log("Taller registrado con éxito:", result.lastInsertRowid);
+    
     res.status(201).json({ message: "Taller registrado con éxito", id: result.lastInsertRowid });
   } catch (error) {
   console.error("ERROR AL REGISTRAR:", error);
