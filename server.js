@@ -98,8 +98,9 @@ app.post('/api/talleres', (req, res) => {
 
     res.status(201).json({ message: "Taller registrado con éxito", id: result.lastInsertRowid });
   } catch (error) {
-    res.status(500).json({ error: "Error al registrar taller" });
-  }
+  console.error("ERROR AL REGISTRAR:", error);
+  res.status(500).json({ error: error.message });
+}
 });
 
 // Levantar servidor
